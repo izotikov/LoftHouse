@@ -1,0 +1,26 @@
+@import '../base/vars';
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-image {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: $font-secondary;
+  font-weight: 300;
+}

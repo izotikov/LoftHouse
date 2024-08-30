@@ -21,9 +21,34 @@ a {
 
 .container {
   padding: 0 15px;
-  width: 1130px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  &--sm {
+    max-width: 824px;
+  }
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.none {
+  display: none !important;
+}
+
+
+.title2 {
+  font-size: 36px;
+  color: $accent;
+  font-weight: 700;
+  font-family: $font-accent;
 }
