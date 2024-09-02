@@ -1,7 +1,18 @@
 @import '../base/vars';
 
 .benefits {
+  position: relative;
   padding: 120px 0;
+
+  &::after {
+    content: "II";
+
+    left: calc(50% + 555px);
+    transform: translateX(-50%);
+    line-height: 1.15;
+
+    @include decorNumber;
+  }
 }
 
 .benefits__row {

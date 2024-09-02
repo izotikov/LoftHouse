@@ -190,6 +190,7 @@ font-family: "Playfair Display", serif;
 
 .nav {
   font-size: 14px;
+  letter-spacing: 0.05rem;
 }
 .nav ul {
   display: flex;
@@ -225,7 +226,19 @@ font-family: "Raleway", sans-serif;
 font-family: "Playfair Display", serif;
  */
 .benefits {
+  position: relative;
   padding: 120px 0;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translateX(-50%);
+  line-height: 1.15;
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 0;
 }
 
 .benefits__row {
@@ -247,6 +260,21 @@ font-family: "Playfair Display", serif;
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.appartments {
+  position: relative;
+}
+.appartments::before {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translateX(50%);
+  line-height: 1.06;
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 0;
 }
 
 .appartments__title {
@@ -375,6 +403,18 @@ font-family: "Playfair Display", serif;
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translateX(-50%);
+  line-height: 1.5;
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 0;
 }
 
 .video__link {
@@ -411,6 +451,19 @@ font-family: "Playfair Display", serif;
 
 .section-map {
   padding: 180px 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translateX(50%);
+  line-height: 2;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  top: 0;
 }
 
 .section-map__title {
@@ -441,6 +494,8 @@ font-family: "Playfair Display", serif;
   background-color: #2D343C;
   padding-top: 72px;
   padding-bottom: 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
 }
 
 .footer__grid {
@@ -451,6 +506,27 @@ font-family: "Playfair Display", serif;
 
 .footer__logo {
   margin-top: -12px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+}
+
+#footer__email {
+  color: #D4C17F;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

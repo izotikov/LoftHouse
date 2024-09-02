@@ -2,6 +2,8 @@
   background-color: $footer-bg;
   padding-top: 72px;
   padding-bottom: 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
 }
 
 .footer__grid {
@@ -17,5 +19,23 @@
 .footer__nav {
 }
 
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
 .footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+}
+
+#footer__email {
+  color: $accent;
+  font-weight: 700;
 }

@@ -1,5 +1,14 @@
 .appartments {
+  position: relative;
 
+  &::before {
+    content: "III";
+
+    right: calc(50% + 555px);
+    transform: translateX(+50%);
+    line-height: 1.06;
+    @include decorNumber;
+  }
 }
 
 .appartments__title {
