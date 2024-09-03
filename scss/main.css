@@ -143,6 +143,11 @@ a:hover {
   font-weight: 700;
   font-family: "Playfair Display", serif;
 }
+@media screen and (max-width: 959px) {
+  .title2 {
+    font-size: 28px;
+  }
+}
 
 .no-scroll {
   overflow-y: hidden;
@@ -162,7 +167,7 @@ font-family: "Playfair Display", serif;
   padding-top: 30px;
   padding-bottom: 74px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     row-gap: 50px;
@@ -205,7 +210,7 @@ font-family: "Playfair Display", serif;
   right: 15px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -214,7 +219,7 @@ font-family: "Playfair Display", serif;
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-btn {
     display: block;
   }
@@ -229,7 +234,7 @@ font-family: "Playfair Display", serif;
   font-weight: 700;
   padding-bottom: 121px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     font-size: 32px;
     padding-bottom: 100px;
@@ -248,7 +253,7 @@ font-family: "Playfair Display", serif;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__footer {
     display: flex;
     flex-direction: column;
@@ -290,7 +295,7 @@ font-family: "Playfair Display", serif;
 .info--map::before {
   background-image: url("../../img/header/map.svg");
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .info {
     font-size: 14px;
   }
@@ -326,7 +331,7 @@ font-family: "Playfair Display", serif;
   justify-content: center;
   column-gap: 70px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -342,7 +347,7 @@ font-family: "Playfair Display", serif;
 .benefits__item-image {
   margin-bottom: 53px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-image {
     width: 60px;
     height: 60px;
@@ -356,7 +361,7 @@ font-family: "Playfair Display", serif;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .benefits__item-text {
     font-size: 16px;
   }
@@ -380,11 +385,21 @@ font-family: "Playfair Display", serif;
 .appartments__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .appartments__title {
+    margin-bottom: 44px;
+  }
+}
 
 .appartments__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .appartments__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .card {
@@ -438,10 +453,22 @@ font-family: "Playfair Display", serif;
   bottom: 44px;
   font-size: 24px;
 }
+@media screen and (max-width: 959px) {
+  .card__title {
+    font-size: 20px;
+    left: 30px;
+    bottom: 24px;
+  }
+}
 
 .cta {
   padding: 180px 0;
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../../img/cta/cta-bg.jpg"), #C4C4C4;
+}
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
 }
 
 .cta__title {
@@ -453,15 +480,30 @@ font-family: "Playfair Display", serif;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__text {
   line-height: 1.5;
+}
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -486,6 +528,11 @@ font-family: "Playfair Display", serif;
   text-align: center;
   line-height: 1.23;
 }
+@media screen and (max-width: 959px) {
+  .form__privacy--bottom {
+    grid-row: 4/5;
+  }
+}
 
 .form__btn {
   height: 50px;
@@ -504,6 +551,7 @@ font-family: "Playfair Display", serif;
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .video::after {
   content: "IV";
@@ -565,9 +613,19 @@ font-family: "Playfair Display", serif;
   font-family: "Playfair Display", serif;
   top: 0;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 60px 0;
+  }
+}
 
 .section-map__title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
@@ -577,6 +635,11 @@ font-family: "Playfair Display", serif;
 
 .feedback {
   padding-bottom: 180px;
+}
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
 }
 
 .feedback__title {
@@ -589,6 +652,11 @@ font-family: "Playfair Display", serif;
   gap: 30px;
   align-items: center;
 }
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
+}
 
 .footer {
   background-color: #2D343C;
@@ -597,11 +665,23 @@ font-family: "Playfair Display", serif;
   font-size: 14px;
   letter-spacing: 0.05rem;
 }
+@media screen and (max-width: 959px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+  }
 }
 
 .footer__logo {

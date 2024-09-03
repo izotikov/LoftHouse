@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
 @import "vars";
+@import "mixins";
 
 
 body {
@@ -51,6 +52,10 @@ a {
   color: $accent;
   font-weight: 700;
   font-family: $font-accent;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 .no-scroll {
