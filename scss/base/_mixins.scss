@@ -5,3 +5,10 @@
   font-family: $font-accent;
   top:0;
 }
+
+
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}

@@ -9,12 +9,31 @@
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 74px;
+
+  @include mediaTablet {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__nav {
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+.header__nav-btn {
+  display: none;
+
+  @include mediaTablet {
+    display: block;
+  }
 }
 
 .header__title {
