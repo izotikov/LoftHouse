@@ -52,3 +52,7 @@ a {
   font-weight: 700;
   font-family: $font-accent;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
